@@ -1,0 +1,45 @@
+# ── Python / Flask ──────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+venv/
+.venv/
+env/
+*.pkl          ← optional: exclude trained models
+pip-debug.log
+
+# ── Jupyter ─────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── React / Node.js ─────────────────────
+node_modules/
+frontend/build/
+frontend/.env
+npm-debug.log*
+yarn-error.log
+.pnp/
+.pnp.js
+
+# ── Environment Variables ────────────────
+.env
+.env.local
+.env.production
+
+# ── VS Code ──────────────────────────────
+.vscode/
+*.code-workspace
+
+# ── OS Files ─────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Datasets (optional — large files) ────
+datasets/*.csv 
