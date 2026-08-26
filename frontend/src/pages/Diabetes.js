@@ -49,8 +49,11 @@ function Diabetes() {
       );
       const res = await axios.post(`${API_URL}/predict/diabetes`, payload);
       setResult(res.data);
-    } catch {
-      setError('Prediction failed. Make sure Flask server is running.');
+    } catch (requestError) {
+      const message = requestError.response?.data?.error
+        || requestError.response?.statusText
+        || requestError.message;
+      setError(`Prediction failed: ${message}`);
     }
     setLoading(false);
   };
