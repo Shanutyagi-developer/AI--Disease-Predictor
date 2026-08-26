@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #555;
+  font-size: 14px;
+}
+
+.form-group input, 
+.form-group select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #4f8ef7;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #4f8ef7, #2563eb);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(79,142,247,0.4);
+}
+
+.btn-primary:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.result-box {
+  margin-top: 24px;
+  padding: 24px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.result-high {
+  background: #fff0f0;
+  border: 2px solid #ff4d4d;
+  color: #cc0000;
+}
+
+.result-low {
+  background: #f0fff4;
+  border: 2px solid #22c55e;
+  color: #15803d;
+}
+
+.result-box h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.result-box p {
+  font-size: 16px;
+}
+
+.probability-bar {
+  background: #eee;
+  border-radius: 999px;
+  height: 12px;
+  margin-top: 16px;
+  overflow: hidden;
+}
+
+.probability-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.8s ease;
+}
